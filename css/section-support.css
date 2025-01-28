@@ -1,0 +1,49 @@
+/* management styles */
+
+.section-support {
+    padding-top: 14em;
+    padding-left: 0;
+}
+
+.section-support .section__wrapper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 6em;
+}
+
+.section-support .section__offer {
+    padding-top: 22em;
+}
+
+.section-support p {
+    color: var(--main-color);
+    max-width: 15em;
+    font-size: 1.5em;
+    padding: 0;
+    margin-top: 0;
+}
+
+.section__offer .section__request {
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    width: max-content;
+    font-weight: 500;
+    font-size: 1em;
+    color: var(--main-color);
+    background: none;
+    margin-left: 0;
+}
+
+.section__request-span {
+    position: relative;
+    margin-left: 2em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+.section-support-backgrounf-svg {
+    display: none;
+}

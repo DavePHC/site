@@ -1,0 +1,52 @@
+/* Modal map */
+
+.modal {
+	display: flex;
+	z-index: 20;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	background-color: rgb(0 0 0 / 55%);
+	opacity: 0;
+	transition: .2s;
+}
+
+.modal--active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal--active .modal__dialog {
+	transform: translateY(0);
+}
+
+
+.modal__dialog {
+	width: 60%;
+	max-height: 70%;
+	overflow: hidden;
+	transition: .2s;
+	transform: translateY(-100%);
+}
+
+.modal__close {
+	width: 40px;
+	height: 40px;
+	background-color: #5414BC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}

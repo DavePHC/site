@@ -1,0 +1,64 @@
+/* management styles */
+
+.section-management {
+    padding-top: 20em;
+    padding-left: 28%;
+}
+
+.section-management .section__wrapper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 2em;
+}
+
+.section-management .section__img {
+    order: 1;
+}
+
+.section-management .section__brand {
+    margin-top: 2em;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    " agile . itil "
+    " . nutanix . ";
+    row-gap: 1em;
+}
+
+
+.section-management .section__brand span:nth-child(1) {
+    grid-area: agile;
+    text-align: left;
+}
+
+.section-management .section__brand span:nth-child(2) {
+    grid-area: itil;
+    text-align: right;
+}
+
+.section-management .section__brand span:nth-child(3) {
+    grid-area: nutanix;
+    text-align: center;
+}
+
+.section-management .section__offer {
+    order: 0;
+    padding-top: 4em;
+}
+
+.section-management .section__offer-wrapper {
+    margin-left: auto;
+    position: relative;
+}
+
+.section-management .section__offer-letter {
+    width: 22em;
+    height: 19em;
+    top: -2em;
+    right: 0;
+    transform: translateX(55%);
+}
+
+.section-management p {
+    max-width: 20em;
+}

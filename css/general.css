@@ -1,0 +1,200 @@
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/Montserrat-Regular.woff2") format("woff2"); font-family: "Montserrat"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-Medium.woff2") format("woff2"); font-family: "Montserrat"; font-weight: 500; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"); font-family: "Montserrat"; font-weight: 600; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-Bold.woff2") format("woff2"); font-family: "Montserrat"; font-weight: 700; font-style: normal; }
+
+
+.mob-svg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+/** 
+ *
+ * Box-sizing format for all elements
+ *
+ */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/**
+ * 
+ * 
+ */
+
+ html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/** 
+ *
+ * Delete body margins and paddings
+ *
+ */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /* main style */
+    color: var(--black-text);
+    font-size: 22px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.home-page-body {
+    background-color: var(--black-title);
+    color: var(--main-color);
+}
+
+.body-lock {
+    overflow: hidden;
+}
+
+.up-svg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.up-svg img {
+    width: 100%;
+    pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+button:hover,
+button:focus,
+button:active,
+button:focus-within {
+    outline: none;
+}
+
+a {
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:focus-within {
+    outline: none;
+}
+
+img {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+p {
+    padding: 0;
+    margin: 0;
+    line-height: 1.45em;
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+	<link rel="icon" href="fav/favicon.svg">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="fav/favicon.ico">
+	<link rel="apple-touch-icon" href="fav/favicon180ios.png">
+	<link rel="manifest" href="webmanifest.json">
+    <!-- Open Graph meta tegs -->
+	<meta property="og:title" content="АВМ-Технология | Разработка и интеграция информационных систем для вашего бизнеса"/>
+	<meta property="og:description" content="Эффективные IT‑решения для вашего бизнеса"/>
+	<meta property="og:image" content="https://avm-t.ru/fav/favicon.svg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "https://avm-t.ru"/>
+	<meta property="og:locale" content="ru_RU" />
+	<!-- Twitter open graph meta tegs -->
+	<meta property="twitter:title" content="АВМ-Технология | Разработка и интеграция информационных систем для вашего бизнеса"/>
+	<meta property="twitter:description" content="Автоматизация бизнес-процессов, внедрение BPM, CRM и ECM-систем, виртуализация инфраструктуры и рабочих мест, менеджмент ИТ-проектов, аудит ИТ-инфраструктуры, разработка приложений для геоинформационных систем."/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>АВМ-Технология | Разработка и интеграция информационных систем для вашего бизнеса</title>
+    <meta name="description" content="Автоматизация бизнес-процессов, внедрение BPM, CRM и ECM-систем, виртуализация инфраструктуры и рабочих мест, менеджмент ИТ-проектов, аудит ИТ-инфраструктуры, разработка приложений для геоинформационных систем.">
+</head>
+<body class="home-page-body">
+
+    <!-- UP-SVG -->
+    <div class="up-svg">
+        <img src="img/up-element.svg" alt="header-background">
+    </div>
+    <!-- END UP-SVG -->
+
+    <img class="mob-svg" src="img/mobile-triangle.svg" alt="triangle">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <button id="burger" class="burger-button" aria-label="открыть мобильное меню">
+            <svg class="burger-button__svg">
+                <use xlink:href="svg/icons.svg#burger"></use>
+            </svg>
+        </button>
+
+        <div id="burger-menu" class="burger-menu-wrapper">
+            <div class="burger-menu">
+                <div class="burger-menu__head">
+                    <a class="logo" href="/">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+                        <span class="logo__text">АВМ-Технология</span>
+                    </a>
+                    <button id="burger-close" class="burger-menu__close" aria-label="Закрыть мобильное меню">
+                        <svg>
+                            <use xlink:href="svg/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="burger-menu__body">
+                    <nav class="navigation burger-navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="automation.html">автоматизация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                            </li>
+                            <li class="navigation__item navigation__item_digital">
+                                <a class="navigation__link" target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="burger-menu__footer">
+                    <ul>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#marker"></use>
+                            </svg>
+                            <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#mail"></use>
+                            </svg>
+                            <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a class="logo" href="/">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+            <span class="logo__text logo__text_desctop">АВМ-Технология</span>
+        </a>
+
+        <nav class="navigation header__navigation">
+            <ul class="navigation__main-list main-list">
+                <li id="dropdown-button" class="main-list__item main-list__item_dropdown">
+                    Услуги
+                    <ul id="dropdown-list" class="navigation__list-dropdown">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="automation.html">автоматизация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-list__item main-list__item_cifro">
+                    <a target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                </li>
+                <li class="main-list__item main-list__item_digital">
+                   <a target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contacts-us">
+            <button id="contacts-us" class="contacts-us__button">
+                <span>связаться с нами</span>
+                <!-- <svg class="contacts-us__svg">
+                    <use xlink:href="svg/icons.svg#arrow"></use>
+                </svg> -->
+            </button>
+            <div id="hidden-info" class="hidden-info">
+                <ul>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#phone"></use>
+                        </svg>
+                        <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#marker"></use>
+                        </svg>
+                        <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#mail"></use>
+                        </svg>
+                        <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- VIDEO-SECTION -->
+        <section class="video-section">
+            <div class="main-offer">
+                <div class="main-offer__text">
+                    <h1 class="main-offer__title">Разработка <br> IT-решений для <br> вашего бизнеса</h1>
+                    <button class="main-offer__link">
+                        <span>
+                            Получить решение
+                        </span>
+                        <span class="main-offer__arrow">
+                            <svg class="main-offer__svg">
+                                <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div id="videoWrapper" class="video-wrapper">
+                <!-- <picture id="video-poster-wrapper" class="video-poster-wrapper">
+                    <source srcset="img/mobile-main-offer.webp" media="(max-width: 600px)">
+                    <source srcset="img/mobile-main-offer.webp" type="image/webp">
+                    <source srcset="img/mobile-main-offer.png">
+                    <img class="video-poster video-poster-main" src="img/mobile-main-offer.webp" data-src="img/main-animation.gif" alt="background">
+                </picture> -->
+                <!-- <picture id="video-poster-wrapper" class="video-poster-wrapper">
+                    <img class="video-poster video-poster-main" src="img/main-animation.gif" alt="background">
+                </picture> -->
+                <video class="video main-video_mobile" muted autoplay loop preload="auto" src="video/main-video_mobile.webm" poster="img/mobile-main-offer.webp" type="video/webm"></video>
+                <video class="video main-video main-video_desctop" muted autoplay loop preload="auto" src="video/main-video_desctop.webm" poster="img/main-desctop-poster.webp" type="video/webm"></video>
+            </div>
+        </section>
+        <!-- END VIDEO-SECTION -->
+
+        <!-- SECTION-AUTOMATION -->
+        <section class="section section-automation">
+            <div class="section__wrapper">
+                <div class="section__img">
+                    <picture>
+                        <source srcset="img/automation-img.webp" type="image/webp">
+                        <source srcset="img/automation-img.png">
+                        <img src="/img/automation-img.png" alt="Автоматизация бизнес-процессов">
+                    </picture>
+                    <div class="section__brand">
+                        <div class="mdc"><span>Microsoft Dynamics CRM</span></div>
+                        <span>1С Предприятие</span>
+                        <span>Битрикс.24</span>
+                        <div class="elma-bpm"><span>ELMA-BPM</span></div>
+                    </div>
+                </div>
+                <div class="section__offer">
+                    <svg class="section__offer-letter">
+                        <use xlink:href="svg/icons.svg#letter-a"></use>
+                    </svg>
+                    <h2>
+                        Автоматизация <br> <span>бизнес-процессов</span>
+                    </h2>
+                    <p>
+                        Формализуйте, контролируйте и измеряйте все бизнес-процессы вашей компании
+                    </p>
+                    <a href="automation.html" aria-label="на страницу автоматизация">
+                        <svg class="section__offer-svg">
+                            <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION-AUTOMATION -->
+
+        <!-- SECTION-VIRTUALISATION -->
+        <section class="section section-virtualisation">
+
+            <img class="after-svg" src="img/after.svg" alt="virtualisation-background">
+
+            <div class="section__wrapper">
+                <div class="section__img">
+                    <picture>
+                        <source srcset="img/virtualisation-img.webp" type="image/webp">
+                        <source srcset="img/virtualisation-img.png">
+                        <img src="/img/virtualisation-img.png" alt="Виртуализация инфраструктуры и рабочих мест">
+                    </picture>
+                    <div class="section__brand">
+                        <span>NVIDIA GRID</span>
+                        <span>Citrix</span>
+                        <span>NUTANIX</span>
+                    </div>
+                </div>
+                <div class="section__offer">
+                    <div class="section__offer-wrapper">
+                        <svg class="section__offer-letter">
+                            <use xlink:href="svg/icons.svg#letter-b"></use>
+                        </svg>
+                        <h2>
+                            Виртуализация <br> <span>инфраструктуры и <br> рабочих мест</span>
+                        </h2>
+                        <p>
+                            Обеспечьте своим сотрудникам удобную и непрерывную работу в любом месте и на любых устройствах
+                        </p>
+                        <a href="virtualisation.html" aria-label="на страницу виртуализация">
+                            <svg class="section__offer-svg">
+                                <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION-VIRTUALISATION -->
+
+        <!-- SECTION-MANAGEMENT -->
+        <section class="section section-management">
+            <div class="section__wrapper">
+                <div class="section__img">
+                    <picture>
+                        <source srcset="img/management-img.webp" type="image/webp">
+                        <source srcset="img/management-img.png">
+                        <img src="/img/management-img.png" alt="Менеджмент IT-проектов">
+                    </picture>
+                    <div class="section__brand">
+                        <span>Agile</span>
+                        <span>ITIL 4</span>
+                        <span>PMBOK</span>
+                    </div>
+                </div>
+                <div class="section__offer">
+                    <svg class="section__offer-letter">
+                        <use xlink:href="svg/icons.svg#letter-m"></use>
+                    </svg>
+                    <h2>
+                        Менеджмент <br> <span>IT-проектов</span>
+                    </h2>
+                    <p>
+                        Переведите управление вашими ИТ-подразделениями на новый уровень
+                    </p>
+                    <a href="management.html" aria-label="на страницу менеджмент">
+                        <svg class="section__offer-svg">
+                            <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION-MANAGEMENT -->
+
+        <!-- SECTION-SUPPORT -->
+        <section class="section section-support">
+
+            <img class="section-support-backgrounf-svg" src="img/section-support-svg.svg" alt="background">
+
+            <div class="section__wrapper">
+                <div class="section__img">
+                    <picture>
+                        <source srcset="img/support-img.webp" type="image/webp">
+                        <source srcset="img/support-img.png">
+                        <img src="img/support-img.png" alt="стабильная работа бизнес-процессов">
+                    </picture>
+                </div>
+                <div class="section__offer">
+                    <p>
+                        Сделайте наш опыт в разработке эффективных и современных ИТ-решений точкой роста вашего бизнеса
+                    </p>
+                    <button class="section__request" >
+                        <span>Отправить запрос</span>
+                        <span class="section__request-span">
+                            <svg class="section__offer-svg">
+                                <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION-SUPPORT -->
+
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer main-footer">
+        <picture>
+            <source srcset="img/down-element-2.svg" media="(max-width: 1023px)">
+            <source srcset="img/down-element.svg">
+            <img class="footer-home-svg" src="img/down-element.svg" alt="footer-background">
+        </picture>
+        <picture>
+            <source srcset="img/main-down-mobile.webp" type="image/webp" media="(max-width: 600px)">
+            <source srcset="img/main-down-mobile.png" media="(max-width: 600px)">
+            <source srcset="img/main-down-img-2.webp" type="image/webp">
+            <source srcset="img/main-down-img-2.png">
+            <img class="footer__img" src="img/main-down-img-2.png" alt="footer-background">
+        </picture>
+        <ul class="footer__wrapper">
+            <li><a href="tel:+74722219402">+7-4722-21-94-02</a></li>
+            <li><a class="js-modal-open" href="#modal">г. Белгород, ул. Костюкова 39а, офис №6</a></li>
+            <li><a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a></li>
+        </ul>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- MODAL WINDOW -->
+	<div class="modal" id="modal">
+		<button class="js-modal-close modal__close">&times</button>
+		<div class="modal__dialog">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae537f9ee3607b71d9b71a960e3687b3671227eba266676789990907452c00db5&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+	</div>
+    <!-- END MODAL WINDOW -->
+
+    <script src="/js/index.js"></script>
+    <!-- <script src="/js/change-video.js"></script> -->
+</body>
+</html>

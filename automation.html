@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+	<link rel="icon" href="fav/favicon.svg">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="fav/favicon.ico">
+	<link rel="apple-touch-icon" href="fav/favicon180ios.png">
+	<link rel="manifest" href="webmanifest.json">
+    <!-- Open Graph meta tegs -->
+	<meta property="og:title" content="АВМ-Технология | Автоматизация бизнес-процессов для перехода к матричной системе управления"/>
+	<meta property="og:description" content="Описание, реинжиниринг, разработка регламентов бизнес-процессов. Внедрение Elma, Битрикс, 
+    Microsoft Dynamics, 1С. Разработка интеграций. Внедрение изменений в прогнозируемые сроки без простоев и с достижением необходимого результата."/>
+	<meta property="og:image" content="https://avm-t.ru/fav/favicon.svg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "https://avm-t.ru"/>
+	<meta property="og:locale" content="ru_RU" />
+	<!-- Twitter open graph meta tegs -->
+	<meta property="twitter:title" content="АВМ-Технология | Автоматизация бизнес-процессов для перехода к матричной системе управления"/>
+	<meta property="twitter:description" content="Описание, реинжиниринг, разработка регламентов бизнес-процессов. Внедрение Elma, Битрикс, 
+    Microsoft Dynamics, 1С. Разработка интеграций. Внедрение изменений в прогнозируемые сроки без простоев и с достижением необходимого результата."/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>АВМ-Технология | Автоматизация бизнес-процессов для перехода к матричной системе управления</title>
+    <meta name="description" content="Описание, реинжиниринг, разработка регламентов бизнес-процессов. Внедрение Elma, Битрикс, Microsoft Dynamics, 1С. Разработка интеграций. Внедрение изменений в прогнозируемые сроки без простоев и с достижением необходимого результата.">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header main-header">
+
+        <button id="burger" class="burger-button" aria-label="открыть мобильное меню">
+            <svg class="burger-button__svg">
+                <use xlink:href="svg/icons.svg#burger"></use>
+            </svg>
+        </button>
+
+        <div id="burger-menu" class="burger-menu-wrapper">
+            <div class="burger-menu">
+                <div class="burger-menu__head">
+                    <a class="logo" href="/">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+                        <span class="logo__text">АВМ-Технология</span>
+                    </a>
+                    <button id="burger-close" class="burger-menu__close" aria-label="Закрыть мобильное меню">
+                        <svg>
+                            <use xlink:href="svg/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="burger-menu__body">
+                    <nav class="navigation burger-navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="automation.html">автоматизация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                            </li>
+                            <li class="navigation__item navigation__item_digital">
+                                <a class="navigation__link" target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="burger-menu__footer">
+                    <ul>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#marker"></use>
+                            </svg>
+                            <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#mail"></use>
+                            </svg>
+                            <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a class="logo" href="/">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+            <span class="logo__text logo__text_desctop">АВМ-Технология</span>
+        </a>
+
+        <nav class="navigation header__navigation">
+            <ul class="navigation__main-list main-list">
+                <li id="dropdown-button" class="main-list__item main-list__item_dropdown">
+                    Услуги
+                    <ul id="dropdown-list" class="navigation__list-dropdown">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="automation.html">автоматизация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-list__item main-list__item_cifro">
+                    <a target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                </li>
+                <li class="main-list__item main-list__item_digital">
+                   <a target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contacts-us">
+            <button id="contacts-us" class="contacts-us__button">
+                <span>связаться с нами</span>
+            </button>
+            <div id="hidden-info" class="hidden-info">
+                <ul>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#phone"></use>
+                        </svg>
+                        <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#marker"></use>
+                        </svg>
+                        <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#mail"></use>
+                        </svg>
+                        <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+    
+        <!-- AUTOMATION-VIDEO -->
+        <section class="automation-video">
+
+            <div class="automation-video__text">
+                <h1 class="automation-video__title">
+                    Автоматизация <br> <span>бизнес-процессов</span>
+                </h1>
+                <button class="main-offer__link">
+                    <span>Отправить запрос</span>
+                    <span class="main-offer__arrow">
+                        <svg class="main-offer__svg">
+                            <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <div id="videoWrapper" class="video-wrapper">
+                <!-- <picture class="video-poster-wrapper">
+                    <source srcset="img/automation-poster.webp" type="image/webp">
+                    <source srcset="img/automation-poster.png">
+                    <img class="video-poster video-poster-automation" src="img/automation-poster.png" alt="background">
+                </picture> -->
+                <!-- <picture class="video-poster-wrapper">
+                    <img class="video-poster video-poster-automation" src="img/Automatization.gif" alt="background">
+                </picture> -->
+                <video class="video automation-video" muted autoplay loop preload="auto" src="video/automation-video.webm" poster="img/automation-poster.webp" type="video/webm"></video>
+            </div>
+
+        </section>
+        <!-- END automation-VIDEO -->
+
+        <!-- AUTOMATION-SUBTITLE -->
+        <div class="automation-subtitle">
+            <div class="automation-subtitle__text-wrapper">
+                <p class="automation-subtitle__text">Повышение эффективности и управляемости бизнеса с помощью внедрения современных программных продуктов</p>
+            </div>
+        </div>
+        <!-- END automation-SUBTITLE -->
+
+        <!-- AUTOMATION-INTRODUCTION -->
+        <section class="automation-introduction">
+
+            <div class="automation-introduction__image">
+                <div class="automation-introduction__image-wrapper">
+                    <picture>
+                        <source srcset="img/automation-introduction.webp" type="image/webp">
+                        <img src="img/automation-introduction.png" alt="Внедрение программного обеспечения">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="automation-introduction__content">
+                <div class="component-text-w-title">
+                    <h2 class="component-text-w-title__title">
+                        <span>Внедрение</span> программного обеспечения
+                    </h2>
+                    <p class="component-text-w-title__text">
+                        Выбор решений по автоматизации напрямую зависит от задач компании, отрасли и размера бизнеса.<br> Мы поможем выбрать решение, подходящее именно вам, и эффективно его внедрить
+                    </p>
+                </div>
+                <div class="section__brand">
+                    <div class="mdc"><span>Microsoft Dynamics CRM</span></div>
+                    <span>1С Предприятие</span>
+                    <span>Битрикс.24</span>
+                    <div class="elma-bpm"><span>ELMA-BPM</span></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- END AUTOMATION-INTRODUCTION -->
+
+        <!-- AUTOMATION-SOFTWARE-DEVELOPMENT -->
+        <section class="automation-software-development">
+            <div class="automation-software-development-wrapper">
+                <h2 class="automation-software-development__title">
+                    <span>Разработка</span> <br> и доработка ПО
+                </h2>
+                <div class="automation-software-development__content">
+                    <p class="automation-software-development__text automation-software-development__text_first">
+                        Ни одно готовое решение не соответствует вашим уникальным процессам?
+                    </p>
+                    <p class="automation-software-development__text automation-software-development__text_bottom">
+                        Готовы выполнить доработку программного обеспечения или разработать новое под ваши задачи
+                    </p>
+                    <div class="typing-wrapper">
+                        <div class="typing"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END AUTOMATION-SOFTWARE-DEVELOPMENT -->
+
+        <!-- AUTOMATION-TRANSPARENCY -->
+        <div class="automation-transparency">
+            <p class="automation-transparency__text">
+                Прозрачность всех процессов компании через их описание, моделирование и регламентацию
+            </p>
+        </div>
+        <!-- END automation-TRANSPARENCY -->
+
+        <!-- AUTOMATION-DESCRIPTION-BPMS -->
+        <section class="automation-description-bpms">
+            <div class="automation-description-bpms__content">
+                <h2 class="automation-description-bpms__title">
+                    <span>Описание</span> <br> бизнес-процессов
+                </h2>
+                <p class="automation-description-bpms__text">
+                    Целостная информация о ходе выполнения бизнес-процессов в виде понятных и полных схем предоставляется сотрудникам любого уровня: от руководителя до исполнителя. Описание производится с использованием методологии BPMN. Разрабатываются регламенты и должностные инструкции
+                </p>
+            </div>
+        </section>
+        <!-- END AUTOMATION-DESCRIPTION-BPMS -->
+
+        <!-- AUTOMATION-CONSALTING -->
+        <section class="automation-consalting">
+
+            <div class="automation-consalting__img">
+                <div class="automation-consalting__img-wrapper">
+                    <picture>
+                        <source srcset="img/automation-consulting.webp" type="image/webp">
+                        <img src="img/automation-consulting.png" alt="Консалтинг">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="automation-consalting__content">
+                <h2 class="automation-consalting__title">
+                    Консалтинг
+                </h2>
+                <p class="automation-consalting__text">
+                    Повышение производительности труда через изменение текущих бизнес-процессов с применением лучших отраслевых практик и опыта наших специалистов
+                </p>
+            </div>
+
+        </section>
+        <!-- END AUTOMATION-CONSALTING -->
+
+        <!-- AUTOMATION-SLIDER -->
+        <section class="automation-slider">
+            <div class="automation-slider-wrapper">
+                <div class="automation-slider__title">
+                    <div>81<span>%</span></div>
+                    <p>наших клиентов <br> стали постоянными</p>
+                </div>
+                <div class="automation-slider__body">
+        
+                    <div class="automation-slider__item automation-slider__item_elpo">
+                        <div class="automation-slider__item-wrapper automation-slider__item-wrapper_cifrozem">
+                            <h3>Цифрозём</h3>
+                            <p>Разработка системы управления земельными активами</p>
+                            <a href="cifrozem.html" class="automation-slider__item-link">
+                                <svg class="automation-slider__item-link-svg" width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.1831 1.80737L34.7016 8.32589L28.1831 14.8444" stroke="#26037B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M34 8L1 8" stroke="#26037B" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="automation-slider__item-prefix automation-slider__item-prefix_elpo">
+                            <span>165</span> автоматизировано бизнес-процессов
+                        </div>
+                        <a class="automation-slider__item-wrapper_cifrozem-link" target="_blanck" rel="noopener noreferrer" href="https://bpmaward.ru/"></a>
+                    </div>
+
+                    <div class="automation-slider__item automation-slider__item_cifrozem">
+                        <div class="automation-slider__item-wrapper automation-slider__item-wrapper_elpo">
+                            <h3>Элпо</h3>
+                            <p>Описание бизнес&#8209;процессов системного интегратора</p>
+                            <!-- <a href="cifrozem" class="automation-slider__item-link">
+                                <svg class="automation-slider__item-link-svg" width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.1831 1.80737L34.7016 8.32589L28.1831 14.8444" stroke="#26037B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M34 8L1 8" stroke="#26037B" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </a> -->
+                        </div>
+                        <!-- <a class="automation-slider__item-project-link" href="cifrozem"></a> -->
+                        <!-- <a class="automation-slider__item-wrapper_cifrozem-link" target="_blanck" rel="noopener noreferrer" href="https://bpmaward.ru/"></a> -->
+                    </div>
+        
+                    <div class="automation-slider__item automation-slider__item_belproect">
+                        <div class="automation-slider__item-wrapper automation-slider__item-wrapper_belproect">
+                            <h3>Белоблпроект</h3>
+                            <p>Автоматизация проектного конвейера</p>
+                        </div>
+                        <div class="automation-slider__item-prefix automation-slider__item-prefix_belproect">
+                            <span>38</span> внедрено <br> программных продуктов
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <!-- END AUTOMATION-SLIDER -->
+
+        <!-- AUTOMATION-OFFER -->
+        <section class="automation-offer">
+            <!-- <svg class="after-svg">
+                <use xlink:href="svg/icons.svg#automatiom-offer-svg"></use>
+            </svg> -->
+            <picture>
+                <source srcset="img/automation-offer-small.svg" media="(max-width: 600px)">
+                <source srcset="img/automation-offer.svg">
+                <img class="automatiom-offer-svg" src="img/automation-offer.svg" alt="automation-background">
+            </picture>
+            <div class="automation-offer__body">
+                <div class="automation-offer__img">
+                    <picture>
+                        <source srcset="img/automation-offer.webp" type="image/webp">
+                        <img src="img/automation-offer.png" alt="Осуществление внедрения">
+                    </picture>
+                </div>
+                <div class="automation-offer__content">
+                    <p class="automation-offer__text">
+                        Изменения в компании - сложный и часто болезненный процесс. <br> Мы помогаем внедрять преобразования в прогнозируемые сроки без простоев и с достижением необходимого результата
+                    </p>
+                    <button class="main-offer__link">
+                        <span>Отправить запрос</span>
+                        <span class="main-offer__arrow">
+                            <svg class="main-offer__svg">
+                                <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- END AUTOMATION-OFFER -->
+
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer automation-footer">
+        <ul class="footer__wrapper">
+            <li><a href="tel:+74722219402">+7-4722-21-94-02</a></li>
+            <li><a class="js-modal-open" href="#modal">г. Белгород, ул. Костюкова 39а, офис №6</a></li>
+            <li><a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a></li>
+        </ul>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- MODAL WINDOW -->
+	<div class="modal" id="modal">
+		<button class="js-modal-close modal__close">&times</button>
+		<div class="modal__dialog">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae537f9ee3607b71d9b71a960e3687b3671227eba266676789990907452c00db5&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+	</div>
+    <!-- END MODAL WINDOW -->
+
+    <script src="/js/typed.min.js"></script>
+    <script src="/js/typing.js"></script>
+    <script src="/js/index.js"></script>
+    <!-- <script src="/js/change-video.js"></script> -->
+</body>
+</html>

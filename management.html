@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+	<link rel="icon" href="fav/favicon.svg">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="fav/favicon.ico">
+	<link rel="apple-touch-icon" href="fav/favicon180ios.png">
+	<link rel="manifest" href="webmanifest.json">
+    <!-- Open Graph meta tegs -->
+	<meta property="og:title" content="АВМ-Технология | Применение лучших практик управления ИТ с адаптацией под требования вашего бизнеса"/>
+	<meta property="og:description" content="Консалтинг управления ИТ-подразделениями любого размера. Аутсорсинг ИТ-директора. Аудит ИТ-инфраструктуры и рисков информационной безопасности. Управление проектами по оптимизации затрат. Экспертная оценка ИТ-персонала, IT-HR."/>
+	<meta property="og:image" content="https://avm-t.ru/fav/favicon.svg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "https://avm-t.ru"/>
+	<meta property="og:locale" content="ru_RU" />
+	<!-- Twitter open graph meta tegs -->
+	<meta property="twitter:title" content="АВМ-Технология | Применение лучших практик управления ИТ с адаптацией под требования вашего бизнеса"/>
+	<meta property="twitter:description" content="Консалтинг управления ИТ-подразделениями любого размера. Аутсорсинг ИТ-директора. Аудит ИТ-инфраструктуры и рисков информационной безопасности. Управление проектами по оптимизации затрат. Экспертная оценка ИТ-персонала, IT-HR."/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>АВМ-Технология | Применение лучших практик управления ИТ с адаптацией под требования вашего бизнеса</title>
+    <meta name="description" content="Консалтинг управления ИТ-подразделениями любого размера. Аутсорсинг ИТ-директора. Аудит ИТ-инфраструктуры и рисков информационной безопасности. Управление проектами по оптимизации затрат. Экспертная оценка ИТ-персонала, IT-HR.">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header main-header">
+
+        <button id="burger" class="burger-button" aria-label="открыть мобильное меню">
+            <svg class="burger-button__svg">
+                <use xlink:href="svg/icons.svg#burger"></use>
+            </svg>
+        </button>
+
+        <div id="burger-menu" class="burger-menu-wrapper">
+            <div class="burger-menu">
+                <div class="burger-menu__head">
+                    <a class="logo" href="/">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+                        <span class="logo__text">АВМ-Технология</span>
+                    </a>
+                    <button id="burger-close" class="burger-menu__close" aria-label="Закрыть мобильное меню">
+                        <svg>
+                            <use xlink:href="svg/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="burger-menu__body">
+                    <nav class="navigation burger-navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="automation.html">автоматизация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                            </li>
+                            <li class="navigation__item navigation__item_digital">
+                                <a class="navigation__link" target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="burger-menu__footer">
+                    <ul>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#marker"></use>
+                            </svg>
+                            <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#mail"></use>
+                            </svg>
+                            <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <a class="logo" href="/">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+            <span class="logo__text logo__text_desctop">АВМ-Технология</span>
+        </a>
+
+        <nav class="navigation header__navigation">
+            <ul class="navigation__main-list main-list">
+                <li id="dropdown-button" class="main-list__item main-list__item_dropdown">
+                    Услуги
+                    <ul id="dropdown-list" class="navigation__list-dropdown">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="automation.html">автоматизация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-list__item main-list__item_cifro">
+                    <a target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                </li>
+                <li class="main-list__item main-list__item_digital">
+                   <a target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contacts-us">
+            <button id="contacts-us" class="contacts-us__button">
+                <span>связаться с нами</span>
+            </button>
+            <div id="hidden-info" class="hidden-info">
+                <ul>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#phone"></use>
+                        </svg>
+                        <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#marker"></use>
+                        </svg>
+                        <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#mail"></use>
+                        </svg>
+                        <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- MANAGEMENT-OFFER -->
+        <section class="management-offer">
+            <div class="management-offer-wrapper">
+                <h1 class="management-title"><span>Менеджмент</span><br>IT-проектов</h1>
+                <button class="main-offer__link">
+                    <span>
+                        Отправить запрос
+                    </span>
+                    <span class="main-offer__arrow">
+                        <svg class="main-offer__svg">
+                            <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div id="videoWrapper" class="video-wrapper">
+                <!-- <picture class="video-poster-wrapper">
+                    <source srcset="img/management-poster.webp" type="image/webp">
+                    <source srcset="img/management-poster.png">
+                    <img class="video-poster video-poster-virtualisation" src="img/management-poster.png" alt="background">
+                </picture> -->
+                <video class="video management-video" muted autoplay loop preload="auto" src="video/management-video.webm" poster="img/management-poster.webp" type="video/webm"></video>
+            </div>
+        </section>
+        <!-- END MANAGEMENT-OFFER -->
+
+        <!-- MANAGEMENT-PREVIEW -->
+        <div class="management-preview">
+            <div class="container">
+                <div class="management-preview__text">
+                    Применение лучших практик управления информационными технологиями с адаптацией под требования вашего бизнеса
+                </div>
+                <div class="management-preview__brends">
+                    <span>ITIL</span>
+                    <span>SCRUM</span>
+                    <span>Agile</span>
+                </div>
+            </div>
+        </div>
+        <!-- END MANAGEMENT-PREVIEW -->
+
+        <!-- MANAGEMENT-FEATURES -->
+        <section class="management-features">
+            <div class="features-wrapper">
+
+                <div class="features-item__title" id="oneone">
+                    Консалтинг
+                </div>
+                <div class="features-item__text" id="onetwo">
+                    управления ИТ-подразделениями любого размера
+                </div>
+                
+
+                <div class="features-item__title" id="twoone">
+                    Аудит <br> <span>ИТ-инфраструктуры</span>
+                </div>
+                <div class="features-item__text" id="twotwo">
+                    Оценка эффективности применения технологических и программных решений. Анализ рисков информационной безопасности
+                </div>
+                
+
+                <div class="features-img features-item" id="three">
+                    <picture>
+                        <source srcset="img/features-img.webp" type="image/webp">
+                        <img src="img/features-img.png" alt="преимущества">
+                    </picture>
+                </div>
+
+
+                <div class="features-item__title" id="fourone">
+                    Управление <span>проектами</span>
+                </div>
+                <div class="features-item__text" id="fourtwo">
+                    изменения ИТ-ландшафта, внедрения программного обеспечения, контроля работы подрядчиков и интеграторов
+                </div>
+                
+            
+                <div class="features-item__title" id="fiveone">
+                    Экспертная <span>оценка</span>
+                </div>
+                <div class="features-item__text" id="fivetwo">
+                    ИТ-персонала при подборе и оценке эффективности работы (IT-HR)
+                </div>
+
+            </div>
+        </section>
+        <!-- END MANAGEMENT-FEATURES -->
+
+        <!-- GROWTH-POINTS -->
+        <section class="growth-points">
+
+            <div class="growth-points__wrapper">
+
+            
+                <h2 class="sub-title growth-points__title">
+                    <span>Точки роста</span> <br> вашего бизнеса
+                    <img src="/img/union.png" alt="#" class="growth-points__title-img">
+                </h2>
+
+                <div class="growth-points-accordion">
+
+                    <div class="accordion-item accordion-item--active">
+                        <div class="accordion-item__title">
+                            <span>Оптимизация затрат <br class="hide-br"> на ИТ</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            Отказ от технологий, несущих значительные затраты в будущем.  Построение стратегии развития ИТ на основе особенностей вашего бизнеса, долгосрочных целей и отраслевой специфики
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item__title">
+                            <span>Полное понимание рисков и перспектив вашей инфраструктуры</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            <span>Независимая оценка рисков информационной безопасности и возможных последствий. Анализ затрат на информационные технологии при масштабировании бизнеса для принятия взвешенных стратегических решений</span>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item__title">
+                            <span>Своевременное внесение изменений</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            Построение команд для реализации запросов бизнеса в утверждённые сроки и с необходимым уровнем качества. Применение технологических инноваций для ускорения внедрения и контроля изменений
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item__title">
+                            <span>Независимая оценка компетенций руководителей ИТ</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            Снижение вероятности появления барьеров для развития бизнеса со стороны ИТ-подразделения благодаря определению уровня управленческих и технологических навыков ИТ-руководителей
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- END GROWTH-POINTS -->
+
+        <!-- MANAGEMENT-HIGHT-LEVEL -->
+        <div class="management-hight-level">
+            <picture>
+                <source srcset="img/management-hight-level-mobile.svg" media="(max-width: 600px)">
+                <source srcset="img/management-hight-level-small.svg" media="(max-width: 768px)">
+                <source srcset="img/management-hight-level.svg">
+                <img class="management-hight-level-svg" src="img/management-hight-level.svg" alt="background">
+            </picture>
+
+            <picture>
+                <source srcset="img/management-hight-level.webp" type="image/webp">
+                <img class="management-hight-level__img" src="img/management-hight-level.png" alt="Новый уровень бизнеса">
+            </picture>
+            
+            <div class="management-hight-level__content">
+                <p class="management-hight-level__text">
+                    Переведите ваш бизнес на новый уровень
+                </p>
+                <button class="main-offer__link">
+                    <span>Отправить запрос</span>
+                    <span class="main-offer__arrow">
+                        <svg class="main-offer__svg">
+                            <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <!-- END MANAGEMENT-HIGHT-LEVEL -->
+
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer management-footer">
+        <ul class="footer__wrapper">
+            <li><a href="tel:+74722219402">+7-4722-21-94-02</a></li>
+            <li><a class="js-modal-open" href="#modal">г. Белгород, ул. Костюкова 39а, офис №6</a></li>
+            <li><a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a></li>
+        </ul>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- MODAL WINDOW -->
+	<div class="modal" id="modal">
+		<button class="js-modal-close modal__close">&times</button>
+		<div class="modal__dialog">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae537f9ee3607b71d9b71a960e3687b3671227eba266676789990907452c00db5&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+	</div>
+    <!-- END MODAL WINDOW -->
+
+    <script src="/js/index.js"></script>
+    <script src="/js/accordion.js"></script>
+    <!-- <script src="/js/change-video.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 874.11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #26037b;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="213.98 130.53 193.65 143.03 0 262.05 0 0 213.98 130.53"/>
+  <polygon class="cls-2" points="360 556.88 0 773.7 0 874.11 360 874.11 360 556.88"/>
+  <polygon class="cls-3" points="360 219.6 214.02 130.55 193.65 143.03 360 243.22 360 219.6"/>
+</svg>

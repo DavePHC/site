@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+	<link rel="icon" href="fav/favicon.svg">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="fav/favicon.ico">
+	<link rel="apple-touch-icon" href="fav/favicon180ios.png">
+	<link rel="manifest" href="webmanifest.json">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>АВМ-Технология | Ой! Кажется вы попали не туда</title>
+</head>
+<body class="body-404-page">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <button id="burger" class="burger-button" aria-label="открыть мобильное меню">
+            <svg class="burger-button__svg">
+                <use xlink:href="svg/icons.svg#burger"></use>
+            </svg>
+        </button>
+
+        <div id="burger-menu" class="burger-menu-wrapper">
+            <div class="burger-menu">
+                <div class="burger-menu__head">
+                    <a class="logo" href="/">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+                        <span class="logo__text">АВМ-Технология</span>
+                    </a>
+                    <button id="burger-close" class="burger-menu__close" aria-label="Закрыть мобильное меню">
+                        <svg>
+                            <use xlink:href="svg/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="burger-menu__body">
+                    <nav class="navigation burger-navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="automation.html">автоматизация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                            </li>
+                            <li class="navigation__item navigation__item_digital">
+                                <a class="navigation__link" href="https://web.avm-t.ru/">digital-решения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="burger-menu__footer">
+                    <ul>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#marker"></use>
+                            </svg>
+                            <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#mail"></use>
+                            </svg>
+                            <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <a class="logo" href="/">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+            <span class="logo__text logo__text_desctop">АВМ-Технология</span>
+        </a>
+
+        <nav class="navigation header__navigation">
+            <ul class="navigation__main-list main-list">
+                <li id="dropdown-button" class="main-list__item main-list__item_dropdown">
+                    Услуги
+                    <ul id="dropdown-list" class="navigation__list-dropdown">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="automation.html">автоматизация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-list__item main-list__item_cifro">
+                    <a href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                </li>
+                <li class="main-list__item main-list__item_digital">
+                   <a href="https://web.avm-t.ru/">digital-решения</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contacts-us">
+            <button id="contacts-us" class="contacts-us__button">
+                <span>связаться с нами</span>
+            </button>
+            <div id="hidden-info" class="hidden-info">
+                <ul>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#phone"></use>
+                        </svg>
+                        <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#marker"></use>
+                        </svg>
+                        <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#mail"></use>
+                        </svg>
+                        <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- CONTENT-404 -->
+        <section class="content-404">
+            <div class="content-404__wrapper">
+                <h1 class="content-404__title">
+                    Ой!<br>Кажется вы<br>попали не туда
+                </h1>
+                <p class="content-404__text">
+                    Продолжайте свое путешествие, нажав на кнопку ниже
+                </p>
+                <a class="main-offer__link" href="https://avm-t.ru">
+                    <span>
+                        На главную
+                    </span>
+                    <span class="main-offer__arrow">
+                        <svg class="main-offer__svg">
+                            <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- END CONTENT-404 -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- MODAL WINDOW -->
+	<div class="modal" id="modal">
+		<button class="js-modal-close modal__close">&times</button>
+		<div class="modal__dialog">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae537f9ee3607b71d9b71a960e3687b3671227eba266676789990907452c00db5&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+	</div>
+    <!-- END MODAL WINDOW -->
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

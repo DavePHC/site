@@ -1,0 +1,75 @@
+/* virtualisation styles */
+
+.section-virtualisation {
+    padding-left: 24.5%;
+    position: relative;
+}
+
+.after-svg {
+    position: absolute;
+    top: 2em;
+    right: 0;
+    width: 60%;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.section-virtualisation .section__wrapper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.section-virtualisation .section__img {
+    order: 1;
+}
+
+.section-virtualisation .section__brand {
+    margin-top: 1em;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    " . . nvidia "
+    " . citrix . "
+    " nutanix . . ";
+    row-gap: 1em;
+}
+
+
+.section-virtualisation .section__brand span:nth-child(1) {
+    grid-area: nvidia;
+    text-align: right;
+}
+
+.section-virtualisation .section__brand span:nth-child(2) {
+    grid-area: citrix;
+    text-align: center;
+}
+
+.section-virtualisation .section__brand span:nth-child(3) {
+    grid-area: nutanix;
+    text-align: left;
+}
+
+
+.section-virtualisation .section__offer {
+    order: 0;
+    padding-top: 5em;
+}
+
+.section-virtualisation .section__offer-wrapper {
+    margin-left: auto;
+    position: relative;
+}
+
+.section-virtualisation .section__offer-letter {
+    width: 18em;
+    height: 19em;
+    top: -8em;
+    left: 0;
+    transform: translateX(-60%);
+}
+
+.section-virtualisation p {
+    max-width: 25em;
+}

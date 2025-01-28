@@ -1,0 +1,553 @@
+
+/* automation-VIDEO */
+
+.automation-video {
+  padding: 0 var(--p-percent);
+  padding-top: 4em;
+  display: flex;
+}
+
+.automation-video__text {
+  margin-top: 4em;
+  padding-left: var(--pl6);
+}
+
+.automation-video__title {
+  font-weight: 600;
+  font-size: 2.7em;
+  margin-bottom: 1em;
+}
+
+.automation-video__title span {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.automation-video__video {
+  margin-left: auto;
+}
+
+/* automation-SUBTITLE */
+
+.automation-subtitle {
+  padding: 6em var(--p-percent) 16em var(--p-percent);
+}
+
+.automation-subtitle__text-wrapper {
+  padding-left: 4em;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.automation-subtitle__text {
+  position: relative;
+  max-width: 18.7em;
+  z-index: 1;
+}
+
+.automation-subtitle__text::before {
+  content: '';
+  background: url(../img/automation-svg-sybtext.svg) no-repeat center center / contain;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -30%) rotate(-15deg);
+  z-index: -1;
+}
+
+/* AUTOMATION-INTRODUCTION */
+
+.automation-introduction {
+  padding: 0 var(--p-percent) 13em var(--p-percent);
+  display: flex;
+}
+
+.automation-introduction__image {
+  padding-left: 4em;
+  padding-top: 4em;
+}
+
+.automation-introduction__image-wrapper {
+  max-width: 33em;
+  width: 100%;
+}
+
+.automation-introduction__image-wrapper img {
+  width: 100%;
+}
+
+.automation-introduction__content {
+  padding-left: var(--pl6);
+}
+
+.component-text-w-title {
+  font-size: 1em;
+}
+
+.component-text-w-title__title {
+  font-size: 1.5em;
+  line-height: 1.5;
+  max-width: 16em;
+}
+
+.component-text-w-title__title span {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5em;
+  transform: translateX(-1.5em);
+}
+
+.component-text-w-title__text {
+  margin-top: 3em;
+  max-width: 24em;
+}
+
+.automation-introduction__content .section__brand {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  " . crm . "
+  " c1 . b24 "
+  " . elma . ";
+  row-gap: 1em;
+}
+
+.automation-introduction__content .section__brand span {
+  font-weight: 700;
+  color: #DEE1F9;
+}
+
+.automation-introduction__content .section__brand span:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+}
+
+.automation-introduction__content .section__brand span:nth-child(2) {
+  grid-area: c1;
+}
+
+.automation-introduction__content .section__brand span:nth-child(3) {
+  grid-area: b24;
+  text-align: right;
+}
+
+.automation-introduction__content .section__brand span:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  text-align: center;
+}
+
+/* AUTOMATION-SOFTWARE-DEVELOPMENT */
+
+.automation-software-development {
+  padding: 0 var(--p-percent) 19em var(--p-percent);
+}
+
+.automation-software-development-wrapper {
+  padding-left: 16em;
+}
+
+.automation-software-development__title {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.automation-software-development__title span {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.automation-software-development__content {
+  position: relative;
+  margin-top: 2em;
+  margin-left: 8em;
+  border-radius: 0.5em;
+  background: #EFF1FE;
+  padding: 3em 0;
+  width: 32em;
+}
+
+.automation-software-development__text {
+  font-size: 1em;
+  margin-bottom: 2em;
+  transform: translateX(-3em);
+}
+
+.automation-software-development__text_first {
+  font-weight: 600;
+  max-width: 15em;
+}
+
+.automation-software-development__text_bottom {
+  margin-bottom: 0;
+  max-width: 20em;
+}
+
+/* Typing styles */
+
+.typing-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(25%, calc(-50% - 0.75em));
+  width: 18em;
+  height: 10em;
+  border-radius: 1.1em;
+  background: #407AE3;
+}
+
+.typing {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.1em;
+    background: #4425C1;
+    color: var(--main-color);
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    font-size: 1.1em;
+    padding: 4em 1.5em 2em 1.5em;
+    transform: translateY(1.5em);
+}
+
+.typing::after {
+  content: '';
+  height: 1.2em;
+  padding: 2px;
+  margin-left: 10px;
+  background-color: var(--main-color);
+  animation: typing 1.2s ease infinite;
+}
+
+span.typed-cursor {
+  display:none;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.automation-transparency {
+  padding: 0 16% 16em var(--p-percent);
+}
+
+.automation-transparency__text {
+  position: relative;
+  font-size: 1.3em;
+  max-width: 19em;
+  margin-left: auto;
+}
+
+.automation-transparency__text::after {
+  content: '';
+  background: url(../img/automation-svg-sybtext.svg) no-repeat center center / contain;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -30%) rotate(-15deg);
+  z-index: -1;
+}
+
+/* AUTOMATION-DESCRIPTION-BPMS */
+
+.automation-description-bpms {
+  padding-bottom: 7em;
+}
+
+.automation-description-bpms__content {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.automation-description-bpms__title {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.automation-description-bpms__title span {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.automation-description-bpms__text {
+  max-width: 27em;
+  font-size: 1em;
+  margin-top: 3em;
+  margin-left: 6em;
+}
+
+/* AUTOMATION-CONSALTING */
+
+.automation-consalting {
+  padding: 0 var(--p-percent) 14em var(--p-percent);
+  display: flex;
+}
+
+.automation-consalting__img {
+  padding-left: 4em;
+}
+
+.automation-consalting__img-wrapper {
+  max-width: 33em;
+  width: 100%;
+}
+
+.automation-consalting__img-wrapper img {
+  width: 100%;
+}
+
+.automation-consalting__content {
+  margin-top: 5.5em;
+  padding-left: var(--pl6);
+}
+
+.automation-consalting__title {
+  font-size: 2em;
+  font-weight: 600;
+  transform: translateX(-1.5em);
+}
+
+.automation-consalting__text {
+  margin-top: 3em;
+  font-size: 1em;
+  max-width: 20em;
+}
+
+/* AUTOMATION-SLIDER */
+
+.automation-slider {
+  padding: 0 var(--p-percent) 14em var(--p-percent);
+}
+
+.automation-slider-wrapper {
+  padding-left: 14em;
+}
+
+.automation-slider__title div {
+  font-weight: 700;
+  color: var(--hover-link);
+  font-size: 3em;
+}
+
+.automation-slider__title span {
+  font-size: 0.6em;
+}
+
+.automation-slider__title p {
+  position: relative;
+  line-height: 1.6;
+}
+
+.automation-slider__title p::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-55%);
+  display: block;
+  width: 5em;
+  height: 5em;
+  background: url(../img/union.svg) no-repeat center center / contain;
+  z-index: -1;
+}
+
+.automation-slider__body {
+  margin-left: 6em;
+  transform: translateY(-3.5em);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: 1fr 1fr;
+  gap: 3em;
+}
+
+.automation-slider__item {
+  position: relative;
+  width: 21em;
+  height: 14em;
+  background: #F7F8FF;
+  border-radius: 0.4em;
+}
+
+.automation-slider__item_elpo {
+  transform: translateY(50%);
+}
+
+.automation-slider__item-wrapper_cifrozem-link {
+  width: 4.2em;
+  height: 4.2em;
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  display: block;
+  background: url(../img/star.svg) no-repeat center center / contain;
+  z-index: 2;
+  transition: all 200ms;
+  border-radius: 50%;
+}
+
+.automation-slider__item-wrapper_cifrozem-link:hover {
+  box-shadow: 0 4px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.automation-slider__item_belproect {
+  grid-column-start: 2;
+  transform: translateX(7em);
+}
+
+.automation-slider__item-wrapper {
+  height: 100%;
+  padding: 3em 0 0 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.automation-slider__item-wrapper::before {
+  z-index: -1;
+}
+
+.automation-slider__item-wrapper_elpo::before {
+  content: '';
+  position: absolute;
+  width: 10em;
+  height: 11em;
+  display: block;
+  background: url(../img/elpo-logo.svg) no-repeat center center / contain;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-40%);
+}
+
+.automation-slider__item-wrapper_cifrozem::before {
+  content: '';
+  position: absolute;
+  width: 7.2em;
+  height: 12em;
+  display: block;
+  background: url(../img/cifrozem-logo.svg) no-repeat center center / contain;
+  bottom: -0.8em;
+  left: 0;
+  transform: translateX(-10%);
+}
+
+.automation-slider__item-wrapper_belproect::before {
+  content: '';
+  position: absolute;
+  width: 11.5em;
+  height: 14em;
+  display: block;
+  background: url(../img/bel-project-logo.svg) no-repeat center center / contain;
+  bottom: -2.8em;
+  left: 0;
+  transform: translateX(-10%);
+}
+
+.automation-slider__item h3 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.automation-slider__item p {
+  margin-top: 2em;
+  line-height: 1.45;
+  max-width: 14em;
+}
+
+.automation-slider__item-prefix {
+  position: absolute;
+  font-size: 1em;
+}
+
+.automation-slider__item-prefix span {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  position: relative;
+  color: var(--hover-link)
+}
+
+.automation-slider__item-prefix span::before {
+  content: '>';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  display: block;
+  font-size: 0.5em;
+  font-weight: 700;
+  color: var(--hover-link);
+}
+
+
+.automation-slider__item-prefix_elpo {
+  max-width: 11em;
+  left: 3.5em;
+  bottom: -6em;
+  transform: translateY(100%);
+
+}
+
+.automation-slider__item-prefix_belproect {
+  left: 1em;
+  bottom: -3em;
+  transform: translateY(100%);
+}
+
+/* AUTOMATION-OFFER */
+
+.automation-offer {
+  position: relative;
+  overflow: hidden;
+}
+
+.automatiom-offer-svg {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  top: 0;
+  z-index: -1;
+}
+
+.automation-offer__body {
+  padding-top: 6em;
+  display: flex;
+}
+
+.automation-offer__img {
+  width: 20em;
+}
+
+.automation-offer__img img {
+  width: 100%;
+}
+
+.automation-offer__content {
+  margin-top: 7.5em;
+  margin-left: 7em;
+}
+
+.automation-offer__text {
+  font-size: 1.3em;
+  max-width: 20em;
+  margin-bottom: 2em;
+}

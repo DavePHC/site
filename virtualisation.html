@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+	<link rel="icon" href="fav/favicon.svg">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="fav/favicon.ico">
+	<link rel="apple-touch-icon" href="fav/favicon180ios.png">
+	<link rel="manifest" href="webmanifest.json">
+    <!-- Open Graph meta tegs -->
+	<meta property="og:title" content="АВМ-Технология | Виртуализация - новый принцип организации работы для компаний любого размера"/>
+	<meta property="og:description" content="Построение и поддержка современной инфраструктуры на базе решений Nutanix, Citrix и NVIDIA GRID vGPU. Комфортная работа в облаке с тяжёлыми приложениями, САПР на любых устройствах. Уменьшение стоимости владения и полный контроль над вашими данными."/>
+	<meta property="og:image" content="https://avm-t.ru/fav/favicon.svg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "https://avm-t.ru"/>
+	<meta property="og:locale" content="ru_RU" />
+	<!-- Twitter open graph meta tegs -->
+	<meta property="twitter:title" content="АВМ-Технология | Виртуализация - новый принцип организации работы для компаний любого размера"/>
+	<meta property="twitter:description" content="Построение и поддержка современной инфраструктуры на базе решений Nutanix, Citrix и NVIDIA GRID vGPU. Комфортная работа в облаке с тяжёлыми приложениями, САПР на любых устройствах. Уменьшение стоимости владения и полный контроль над вашими данными."/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>АВМ-Технология | Виртуализация - новый принцип организации работы для компаний любого размера</title>
+    <meta name="description" content="Построение и поддержка современной инфраструктуры на базе решений Nutanix, Citrix и NVIDIA GRID vGPU. Комфортная работа в облаке с тяжёлыми приложениями, САПР на любых устройствах. Уменьшение стоимости владения и полный контроль над вашими данными.">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header main-header virtualisation-header">
+
+        <button id="burger" class="burger-button" aria-label="открыть мобильное меню">
+            <svg class="burger-button__svg">
+                <use xlink:href="svg/icons.svg#burger"></use>
+            </svg>
+        </button>
+
+        <div id="burger-menu" class="burger-menu-wrapper">
+            <div class="burger-menu">
+                <div class="burger-menu__head">
+                    <a class="logo" href="/">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+                        <span class="logo__text">АВМ-Технология</span>
+                    </a>
+                    <button id="burger-close" class="burger-menu__close" aria-label="Закрыть мобильное меню">
+                        <svg>
+                            <use xlink:href="svg/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="burger-menu__body">
+                    <nav class="navigation burger-navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="automation.html">автоматизация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                            </li>
+                            <li class="navigation__item navigation__item_digital">
+                                <a class="navigation__link" target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="burger-menu__footer">
+                    <ul>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#marker"></use>
+                            </svg>
+                            <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                        </li>
+                        <li class="burger-menu-f__item hidden-info__item">
+                            <svg class="contacts-us__hide-blog-svg">
+                                <use xlink:href="svg/icons.svg#mail"></use>
+                            </svg>
+                            <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <a class="logo" href="/">
+            <img class="logo__img" src="img/logo.svg" alt="Логотип АВМ-Технология">
+            <span class="logo__text logo__text_desctop">АВМ-Технология</span>
+        </a>
+
+        <nav class="navigation header__navigation">
+            <ul class="navigation__main-list main-list">
+                <li id="dropdown-button" class="main-list__item main-list__item_dropdown">
+                    Услуги
+                    <ul id="dropdown-list" class="navigation__list-dropdown">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="automation.html">автоматизация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="virtualisation.html">виртуализация</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="management.html">ит-менеджмент</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-list__item main-list__item_cifro">
+                    <a target="_blanck" href="https://cifro.avm-t.ru/">цифровая трансформация</a>
+                </li>
+                <li class="main-list__item main-list__item_digital">
+                   <a target="_blanck" href="https://web.avm-t.ru/">digital-решения</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contacts-us">
+            <button id="contacts-us" class="contacts-us__button">
+                <span>связаться с нами</span>
+            </button>
+            <div id="hidden-info" class="hidden-info">
+                <ul>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#phone"></use>
+                        </svg>
+                        <a href="tel:+74722219402">+7-4722-21-94-02</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#marker"></use>
+                        </svg>
+                        <a class="js-modal-open" href="#modal">г. Белгород, <br> ул. Костюкова 39а, офис №6</a>
+                    </li>
+                    <li class="hidden-info__item">
+                        <svg class="contacts-us__hide-blog-svg">
+                            <use xlink:href="svg/icons.svg#mail"></use>
+                        </svg>
+                        <a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- VIRTUALISATION-OFFER -->
+        <section class="virtualisation-offer">
+            <div class="virtualisation-offer__content-wrapper">
+                <div class="virtualisation-offer__content">
+                    <h1 class="virtualisation-offer__title">
+                        <span>Виртуализация</span> <br> инфраструктуры <br> и рабочих мест
+                    </h1>
+                    <button class="main-offer__link">
+                        <span>
+                            Отправить запрос
+                        </span>
+                        <span class="main-offer__arrow">
+                            <svg class="main-offer__svg">
+                                <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="videoWrapper" class="video-wrapper">
+                <!-- <picture class="video-poster-wrapper">
+                    <source srcset="img/virtualisation-poster.webp" type="image/webp">
+                    <source srcset="img/virtualisation-poster.png">
+                    <img class="video-poster video-poster-virtualisation" src="img/virtualisation-poster.png" alt="background">
+                </picture> -->
+                <!-- <picture class="video-poster-wrapper">
+                    <img class="video-poster video-poster-virtualisation" src="img/Virtualization.gif" alt="background">
+                </picture> -->
+                <video class="video virtualisation-video main-video_desctop" muted autoplay loop preload="auto" src="video/virtualisation-video.webm" poster="img/virtualisation-poster.webp" type="type/webm"></video>
+                <video class="video virtualisation-video main-video_mobile" muted autoplay loop preload="auto" src="video/virtualisation-video-mobile.webm" poster="img/virtualisation-poster-mobile.webp" type="type/webm"></video>
+            </div>
+
+        </section>
+        <!-- END VIRTUALISATION-OFFER -->
+
+        <!-- VIRTUALISATION-PRINCIPLE -->
+        <section class="virtualisation-principle">
+            <div class="virtualisation-principle__wrapper">
+                <h2 class="virtualisation-principle__title">
+                    Новый принцип <br> организации работы для <br> компаний любого размера
+                </h2>
+                <p class="virtualisation-principle__text">
+                    Формирование единого рабочего пространства с различных устройств, расположенных как во внутренней сети предприятия, так и за её пределами без ограничений и компромиссов
+                </p>
+            </div>
+        </section>
+        <!-- END VIRTUALISATION-PRINCIPLE -->
+        
+        <!-- VIRTUALISATION-THESIS -->
+        <div class="virtualisation-thesis">
+            <p class="virtualisation-thesis__text">
+                Комфортная работа, в том числе с тяжёлыми графическими приложениями и САПР, <br> на любых устройствах
+            </p>
+        </div>
+        <!-- END VIRTUALISATION-THESIS -->
+
+        <!-- VIRTUALISATION-EXCELLENCE -->
+        <section class="virtualisation-excellence">
+
+            <div class="virtualisation-excellence__wrapper">
+                <h2 class="virtualisation-excellence__title">
+                    <span>Преимущества</span> <br> виртуализации
+                </h2>
+        
+                <div class="growth-points-accordion">
+        
+                    <div class="accordion-item accordion-item--active">
+                        <div class="accordion-item__title">
+                            <span>Отсутствие барьеров и ограничений</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            Сотрудники могут получать доступ к  приложениям и данным на любых устройствах независимо от их типа и производительности. При этом возможно использование собственной техники для организации эффективной и безопасной удаленной работы полностью соответствующей  офисному формату
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item__title">
+                            <span>Полный контроль над вашими данными</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            <span>Благодаря тому, что все без исключения данные находятся на серверах компании, исключается потеря конфиденциальной информации при краже и потере устройства.  А так как все сведения хранятся централизованно, значительно упрощается обмен, разграничение доступа и выполнение резервного копирования</span>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item__title">
+                            <span>Гибкий подход к организации рабочего места</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            Отсутствует необходимость в организации серверных помещений в филиалах. Единственное, что нужно для подключения работников к корпоративной инфраструктуре, - это выход в интернет. Сотрудник может поменять своё рабочее место и мгновенно получить доступ ко всем своим данным и настройкам приложений
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item__title">
+                            <span>Уменьшение стоимости владения <br> ИТ-инфраструктурой</span>
+                            <svg class="accordion-item__svg">
+                                <use xlink:href="svg/icons.svg#close"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-item__text">
+                            Сокращение количества оборудования с применением метода централизованного управления снижают временные затраты на администрирование инфраструктуры, в разы повышая производительность труда.  Помимо этого беспечивается планомерное полное резервирование, исключающее простои и связанные с ними издержки
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+        </section>
+        <!-- END VIRTUALISATION-EXCELLENCE -->
+
+        <!-- VIRTUALISATION-FOOTER-OFFER -->
+        <div class="virtualisation-footer-offer">
+
+            <!-- <svg class="virtualisation-footer-offer__svg">
+                <use xlink:href="svg/icons.svg#virtualisation-offer-svg"></use>
+            </svg> -->
+
+            <picture>
+                <source srcset="img/after-virtualisation-mobile.svg" media="(max-width: 768px)">
+                <source srcset="img/after-virtualisation.svg" media="(max-width: 1024px)">
+                <source srcset="img/virtualisation-offer-svg.svg">
+                <img class="virtualisation-footer-offer__svg" src="img/virtualisation-offer-svg.svg" alt="background">
+            </picture>
+
+            <div class="virtualisation-footer-offer__content">
+
+                <div class="virtualisation-footer-offer__img">
+
+                    <picture>
+                        <source srcset="img/virtualisation-cubes.webp" type="image/webp">
+                        <img src="img/virtualisation-cubes.png" alt="photo">
+                    </picture>
+
+                    <div class="virtualisation-footer-offer__brands">
+                        <div class="virtualisation-footer-offer__brand-item virtualisation-footer-offer__brand-item_citrix">
+                            <span>Citrix XenDesktop</span>
+                        </div>
+                        <div class="virtualisation-footer-offer__brand-item virtualisation-footer-offer__brand-item_nvidia">
+                            <span>NVIDIA GRID vGPU</span>
+                        </div>
+                        <div class="virtualisation-footer-offer__brand-item virtualisation-footer-offer__brand-item_nutanix">
+                            <span>Nutanix AHV</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="virtualisation-footer-offer__text">
+                    <p class="automation-offer__text">
+                        Воспользуйтесь всеми преимуществами современных технологий виртуализации для вашего бизнеса
+                    </p>
+                    <button class="main-offer__link">
+                        <span>Отправить запрос</span>
+                        <span class="main-offer__arrow">
+                            <svg class="main-offer__svg">
+                                <use xlink:href="svg/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END VIRTUALISATION-FOOTER-OFFER -->
+
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer virtualisation-footer">
+        <ul class="footer__wrapper">
+            <li><a href="tel:+74722219402">+7-4722-21-94-02</a></li>
+            <li><a class="js-modal-open" href="#modal">г. Белгород, ул. Костюкова 39а, офис №6</a></li>
+            <li><a target="_blanck" rel="noopener noreferrer" href="mailto:clients@avm-t.ru">clients@avm-t.ru</a></li>
+        </ul>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- MODAL WINDOW -->
+	<div class="modal" id="modal">
+		<button class="js-modal-close modal__close">&times</button>
+		<div class="modal__dialog">
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae537f9ee3607b71d9b71a960e3687b3671227eba266676789990907452c00db5&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+	</div>
+    <!-- END MODAL WINDOW -->
+
+    <script src="/js/index.js"></script>
+    <script src="/js/accordion.js"></script>
+    <!-- <script src="/js/change-video.js"></script> -->
+</body>
+</html>

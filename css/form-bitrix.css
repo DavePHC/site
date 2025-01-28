@@ -1,0 +1,25 @@
+/* Bitrix form */
+
+body .b24-form-sign {
+	display: none !important;
+}
+
+body .b24-form-wrapper {
+	padding: 5% 12% !important;
+}
+
+body .b24-form-header {
+	border: none !important;
+}
+
+body .b24-window-close {
+	background-color: transparent !important;
+}
+
+body .b24-window-close::before, body .b24-window-close::after {
+	background-color: black !important;
+}
+
+body .b24-form-control-alert {
+	margin: 0 !important;
+}

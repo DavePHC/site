@@ -1,0 +1,50 @@
+:root {
+
+    /* colors */
+
+    --main-color: #fff;
+    --main-dark: #000;
+    --black-title: #1B1E35;
+    --black-text: rgb(0 0 0 / 87%);
+    --accent: #4425C1;
+    --hover-link: #26037B;
+    --hover-accent: #9EA5CC;
+    --lite-violet: #CFD4F3;
+
+    /* transitions timing */
+
+    --transition-color: color 200ms ease-in;
+
+    --p-percent: 7%;
+    --pl6: 6em;
+    --title-font-size: 2.5em;
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+    :root {
+
+        --p-percent: 5%;
+
+        --pl6: 4em;
+
+        --title-font-size: 2.1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    :root {
+    
+        --title-font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    :root {
+    
+        --pl6: 1em;
+    }
+}
